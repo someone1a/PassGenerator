@@ -29,12 +29,20 @@
         <section>
             <article class="generador">
                 Ingrese el largo de la contraseña <br>
-                <input type="number" name="range" id="range" min="6" max="30"><br>
+                <input type="number" name="range" id="range" min="6" placeholder="ingrese un numero mayor a 6"><br>
                 incluir caracteres especiales <input type="checkbox" name="especial" id="especial"><br>
                 Incluir Numeros <input type="checkbox" name="numbers" id="numbers"><br>
                 incluir minusculas <input type="checkbox" name="min" id="min">
                 <input type="submit" value="Generar contraseña" onclick="generate()" class="input"><br>
                 <span id="return"></span>
+            </article>
+            <article>
+                <h2>Tips:</h2>
+                <ul>
+                    <li>la contraseña mientras mas caracteres contenga mas dificil de desifrar va a resultar</li>
+                    <li>Marcar todas las opciones del generador</li>
+                    <li>revisar sus contraseñas <a href="https://www.passwordmonster.com" target="_blank">Aqui</a></li>
+                </ul>
             </article>
         </section>
     </main>
