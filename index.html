@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de contraseñas</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <article class="generador">
+                Ingrese el largo de la contraseña <br>
+                <input type="number" name="range" id="range" min="6" max="30"><br>
+                incluir caracteres especiales <input type="checkbox" name="especial" id="especial"><br>
+                Incluir Numeros <input type="checkbox" name="numbers" id="numbers"><br>
+                incluir minusculas <input type="checkbox" name="min" id="min">
+                <input type="submit" value="Generar contraseña" onclick="generate()"><br>
+                <span id="return"></span>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
