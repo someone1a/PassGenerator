@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.generador{
+    margin: 0 auto;
+    max-width: 300px;
+    border: solid 2px;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #252525; 
+      color: #f9f9f9; 
+    }
+    input{
+        background-color: transparent;
+        color: white;
+    }
+    .submit{
+        animation: infinite blackmode 2s alternate linear;
+    }
+  }
+  @keyframes blackmode {
+    
+  }
