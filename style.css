@@ -1,61 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root{
+    --font:'Rubik', sans-serif;
+    --lightb:#FF521B;
+    --lightf:#FC9E4F;
+    --darkb:#090809;
+    --darkf:#78C0E0;
+    --darkT:#FFFBFE;
+}
 body{
-    background-color: white;
-    color: black;
-    font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--lightb);
+    font-family: var(--font);
+}
+.center{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
 }
 .generador{
-    margin: 0 auto;
-    max-width: 400px;
-    height: 400px;
-    border: solid 2px;
-    animation: whitemode 2s infinite alternate linear;
-    text-align: center;
-    font-size: 1.5rem;
+    background-color: var(--lightf);
+    border-radius: 15px;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
-.right{
-    text-align: right;
-}
-footer{
-    position: absolute;
-    bottom: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-      background-color: #252525; 
-      color: #f9f9f9; 
-    }
-    input{
-        background-color: transparent;
-        color: white;
-    }
+@media (min-width:992px){
     .generador{
-        animation: infinite blackmode 2s alternate linear;
+        margin-left: 25vh;
+        margin-right: 25vh;
     }
-    .input{
-        background-color: #ffbe0b;
-        border-color: #ffbe0b;
-        color: #252525;
-    }
-    #return{
-        color: greenyellow;
-    }
-    a{
-        color: white;
-    }
-  }
-  @keyframes blackmode {
-    0%{border-color: #ffbe0b;}
-    25%{border-color: #fb5607;}
-    50%{border-bottom: #ff006e;}
-    75%{border-color: #8338ec;}
-    100%{border-color: #3a86ff;}
-  }
-  @keyframes whitemode {
-    0%{border-color: #7b5a30;}
-    25%{border-color: #4a2f1a;}
-    50%{border-bottom: #364022;}
-    75%{border-color: #6f7a51;}
-    100%{border-color: #292818;}
-  }
+}
