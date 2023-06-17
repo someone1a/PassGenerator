@@ -4,9 +4,11 @@
     --font: 'Rubik', sans-serif;
     --lightb: #FF521B;
     --lightf: #FC9E4F;
+    --lightc: #4cc9f0;
     --darkb: #090809;
-    --darkf: #78C0E0;
+    --darkf: #33415c;
     --darkT: #FFFBFE;
+    --darkc: #3a86ff;
 }
 
 body {
@@ -45,14 +47,14 @@ input[type="checkbox"] {
     outline: none;
 }
 
-input[type="checkbox"]:hover{
-    border:solid green 2px; 
+input[type="checkbox"]:hover {
+    border: solid green 2px;
     background-color: #FFFBFE;
 }
 
 input[type="checkbox"]:checked {
-    background-color: #f8bb4a;
-    border:solid black 2px;
+    background-color: var(--lightc);
+    border: solid black 2px;
     color: white;
 }
 
@@ -60,5 +62,137 @@ input[type="checkbox"]:checked {
     .generador {
         margin-left: 25vh;
         margin-right: 25vh;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--darkb);
+        color: var(--darkT);
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: var(--darkc);
+    }
+
+    .generador {
+        background-color: var(--darkf);
+        color: white;
+    }
+
+    .generador input {
+        background-color: var(--darkf);
+        color: white;
+    }
+
+    .submit {
+        animation: blackmode 5s alternate linear infinite;
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.password{
+    font-size: 1.4rem;
+    animation: blackmodetxt 4s infinite alternate linear;
+}
+@keyframes blackmode {
+    0% {
+        border-color: #007f5f;
+    }
+
+    10% {
+        border-color: #007f5f;
+    }
+
+    20% {
+        border-color: #2b9348;
+    }
+
+    30% {
+        border-color: #55a630;
+    }
+
+    40% {
+        border-color: #80b918;
+    }
+
+    50% {
+        border-color: #aacc00;
+    }
+
+    60% {
+        border-color: #bfd200;
+    }
+
+    70% {
+        border-color: #d4d700;
+    }
+
+    80% {
+        border-color: #dddf00;
+    }
+
+    90% {
+        border-color: #eeef20;
+    }
+
+    100% {
+        border-color: #ffff3f;
+    }
+}
+@keyframes blackmodetxt {
+    0% {
+        color: #007f5f;
+    }
+
+    10% {
+        color: #007f5f;
+    }
+
+    20% {
+        color: #2b9348;
+    }
+
+    30% {
+        color: #55a630;
+    }
+
+    40% {
+        color: #80b918;
+    }
+
+    50% {
+        color: #aacc00;
+    }
+
+    60% {
+        color: #bfd200;
+    }
+
+    70% {
+        color: #d4d700;
+    }
+
+    80% {
+        color: #dddf00;
+    }
+
+    90% {
+        color: #eeef20;
+    }
+
+    100% {
+        color: #ffff3f;
     }
 }

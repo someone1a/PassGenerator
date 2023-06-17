@@ -18,7 +18,8 @@ let generate = ()=>{
         for (let i = 0; i <= range; i++){
             contraseña+= caracteres.charAt(Math.random() * caracteres.length);
         }
-        document.getElementById("return").innerHTML =`Su contraseña de ${range} caracteres es la siguiente: ${contraseña}`
+        document.getElementById("return").innerHTML =`Su contraseña de ${range} caracteres es la siguiente: 
+        <span class="password">${contraseña}</span>`
     }
     else{
         document.getElementById("return").innerHTML =`Ingrese un numero mayor a 6`
