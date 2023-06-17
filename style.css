@@ -1,31 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-:root{
-    --font:'Rubik', sans-serif;
-    --lightb:#FF521B;
-    --lightf:#FC9E4F;
-    --darkb:#090809;
-    --darkf:#78C0E0;
-    --darkT:#FFFBFE;
+
+:root {
+    --font: 'Rubik', sans-serif;
+    --lightb: #FF521B;
+    --lightf: #FC9E4F;
+    --darkb: #090809;
+    --darkf: #78C0E0;
+    --darkT: #FFFBFE;
 }
-body{
+
+body {
     background-color: var(--lightb);
     font-family: var(--font);
 }
-.center{
+
+.center {
     text-align: center;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
 }
-.generador{
+
+.generador {
     background-color: var(--lightf);
     border-radius: 15px;
     margin-left: 10vh;
     margin-right: 10vh;
 }
-@media (min-width:992px){
-    .generador{
+
+.generador input {
+    background-color: var(--lightf);
+    font-size: 1.5rem;
+    border: solid black 2px;
+    color: black;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    outline: none;
+}
+
+input[type="checkbox"]:hover{
+    border:solid green 2px; 
+    background-color: #FFFBFE;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #f8bb4a;
+    border:solid black 2px;
+    color: white;
+}
+
+@media (min-width:992px) {
+    .generador {
         margin-left: 25vh;
         margin-right: 25vh;
     }
