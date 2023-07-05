@@ -29,7 +29,8 @@
         <section>
             <article class="generador center">
                 Ingrese el largo de la contraseña <br>
-                <input type="number" name="range" id="range" min="6" placeholder="ingrese un numero mayor a 6"><br>
+                <input type="range" name="range" id="range" onchange="range()">
+                <span id="rangeRes"></span><br>
                 incluir caracteres especiales <input type="checkbox" name="especial" id="especial" class="check"><br>
                 Incluir Numeros <input type="checkbox" name="numbers" id="numbers" class="check"><br>
                 incluir minusculas <input type="checkbox" name="min" id="min" class="check"><br>
