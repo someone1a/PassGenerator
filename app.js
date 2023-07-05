@@ -1,3 +1,8 @@
+const range = () =>{
+    let range = document.getElementById("range").value
+    let rangeResult = document.getElementById("rangeRes")
+    rangeResult.innerHTML=`${range}`
+}
 let generate = ()=>{
     let range = document.getElementById("range").value
     let carac= document.getElementById("especial").checked
