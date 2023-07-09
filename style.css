@@ -8,6 +8,7 @@
     --darkb: #090809;
     --darkf: #33415c;
     --darkT: #FFFBFE;
+    --borders:black;
     --darkc: #3a86ff;
 }
 
@@ -34,7 +35,7 @@ body {
 .generador input {
     background-color: var(--lightf);
     font-size: 1.5rem;
-    border: solid black 2px;
+    border: solid var(--borders) 2px;
     color: black;
 }
 
@@ -54,8 +55,8 @@ input[type="checkbox"]:hover {
 
 input[type="checkbox"]:checked {
     background-color: var(--lightc);
-    border: solid black 2px;
-    color: white;
+    border: solid var(--borders) 2px;
+    color: var(--darkT);
 }
 
 @media (min-width:992px) {
@@ -78,15 +79,15 @@ ul {
     input[type="checkbox"]:checked {
         background-color: var(--darkc);
     }
-
+    
     .generador {
         background-color: var(--darkf);
-        color: white;
+        color: var(--darkT);
     }
 
     .generador input {
         background-color: var(--darkf);
-        color: white;
+        color: var(--darkT);
     }
 
     .submit {
