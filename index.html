@@ -9,7 +9,7 @@
     <meta name="title" content="PassGenerator">
     <meta name="description" content="Generador de contraseñas  fácil y sencillo de utilizar">
     <meta name="keywords"
-        content="contraseñas, generador, contraseñas fuertes, contraseñas seguras, generador de contraseñas, passGenerator">
+        content="contraseñas, generador, contraseñas fuertes, ProtectPassGenerator, contraseñas seguras, generador de contraseñas, passGenerator">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Spanish">
@@ -29,7 +29,8 @@
         <section>
             <article class="generador center">
                 Ingrese el largo de la contraseña <br>
-                <input type="number" name="range" id="range" min="6" placeholder="ingrese un numero mayor a 6"><br>
+                <input type="range" name="range" id="range" onchange="range()" class="center" min="6" >
+                <span id="rangeRes"></span><br>
                 incluir caracteres especiales <input type="checkbox" name="especial" id="especial" class="check"><br>
                 Incluir Numeros <input type="checkbox" name="numbers" id="numbers" class="check"><br>
                 incluir minusculas <input type="checkbox" name="min" id="min" class="check"><br>

@@ -1,16 +1,21 @@
+const range = () =>{
+    let range = document.getElementById("range").value
+    let rangeResult = document.getElementById("rangeRes")
+    rangeResult.innerHTML=`${range}`
+}
 let generate = ()=>{
     let range = document.getElementById("range").value
     let carac= document.getElementById("especial").checked
     let min = document.getElementById("min").checked
     let numbers = document.getElementById("numbers").checked
-    let caracteres= "ABCDEFGHIJKLMNOPQRSTWXYZ"
+    let caracteres= "ABCDEFGHIJKLMNÑOPQRSTWXYZ"
     let contraseña = ""
     if(range >= 6){
         if(min === true){
             caracteres += caracteres.toLowerCase()
         }
         if(carac === true){
-            caracteres += "!#$%&//()=?¡*]}{[_.-:,;"
+            caracteres += "!#$%&//()=?¡*]}{[_.-:,;¿\^`@-_|°¬"
         }
         if(numbers === true){
             caracteres+= 1234567890
